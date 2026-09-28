@@ -48,9 +48,15 @@ Some of the main features include:
 - JWT authentication
 - Git
 
+## Event experience
+
+Users can browse events, view event information and ticket options, and move into either general admission purchasing or reserved-seat selection depending on the event.
+![Event detail page](screenshots/event-detail.jpg)
+
 ## One of the harder parts
 
 One of the more difficult parts of the project was reserved seating.
+![Reserved seat selection](screenshots/seat-selection.jpg)
 
 When two people are looking at the same event, the system needs to make sure they cannot both buy the same seat.
 
@@ -75,6 +81,17 @@ The platform uses Paystack for payment processing.
 I implemented payment initialization, callbacks, webhook handling, payment confirmation, refunds and reconciliation logic.
 
 I also built the order flow around the payment system so that tickets are only fulfilled after a payment has been successfully confirmed.
+
+## Organizer side
+
+I also built tools for organizers to manage their events and monitor what is happening across orders, ticket sales, refunds and other activity.
+![Organizer analytics](screenshots/organizer-analytics.jpg)
+
+
+## Ticket scanning
+
+The platform also includes a ticket-scanning interface for event entry and check-in.
+![Ticket scanner](screenshots/ticket-scanner.jpg)
 
 ## What I learned from building it
 
@@ -104,5 +121,6 @@ https://ticket-frontend-production-486f.up.railway.app/
 ## Source code
 
 The production source code is kept in a private repository because the project is still under active development and contains implementation details I do not want to expose publicly.
+![Zã homepage](screenshots/home.jpg)
 
 I am happy to discuss the architecture, technical decisions and challenges I encountered during the project.
